@@ -1,0 +1,12 @@
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Debug\QuanLySinhVien.Model.csproj.CoreCompileInputs.cache
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Debug\QuanLySinhVien.Model.dll.config
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Debug\QuanLySinhVien.Model.dll
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Debug\QuanLySinhVien.Model.pdb
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Debug\EntityFramework.dll
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Debug\EntityFramework.xml
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Debug\QuanLySinhVien.Model.csproj.AssemblyReference.cache
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Debug\QuanLySinhVien.Model.csproj.CopyComplete
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Debug\QuanLySinhVien.Model.dll
+D:\FinalProjectWindows\ProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Debug\QuanLySinhVien.Model.pdb
