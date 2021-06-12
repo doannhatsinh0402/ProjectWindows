@@ -13,7 +13,7 @@ namespace QuanLySinhVien.Data
     {
         public QLSVDbContext() : base("name=DefaultConnection")
         {
-            
+            this.Configuration.LazyLoadingEnabled = false; 
         }
         public virtual DbSet<Diem> Diems { get; set; }
         public virtual DbSet<GiangVien> GiangViens { get; set; }

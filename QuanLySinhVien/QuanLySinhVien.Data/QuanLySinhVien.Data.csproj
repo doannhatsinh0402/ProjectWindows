@@ -58,24 +58,38 @@
     <Compile Include="EntityConfigurations\LopHPConfiguration.cs" />
     <Compile Include="EntityConfigurations\MonHocConfiguration.cs" />
     <Compile Include="EntityConfigurations\SinhVienConfiguration.cs" />
-    <Compile Include="Infrastucture\IDbFactory.cs" />
     <Compile Include="Infrastucture\IReponsitory.cs" />
     <Compile Include="Infrastucture\IUnitOfWork.cs" />
+    <Compile Include="Infrastucture\ReponsitoryBase.cs" />
+    <Compile Include="Infrastucture\UnitOfWork.cs" />
     <Compile Include="Migrations\202106111626339_CreateDatabase.cs" />
     <Compile Include="Migrations\202106111626339_CreateDatabase.designer.cs">
       <DependentUpon>202106111626339_CreateDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106120722223_AddValue.cs" />
+    <Compile Include="Migrations\202106120722223_AddValue.designer.cs">
+      <DependentUpon>202106120722223_AddValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106121356241_UpdateObjectDiem.cs" />
+    <Compile Include="Migrations\202106121356241_UpdateObjectDiem.designer.cs">
+      <DependentUpon>202106121356241_UpdateObjectDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLSVDbContext.cs" />
+    <Compile Include="Reponsitories\DiemReponsitory.cs" />
+    <Compile Include="Reponsitories\GiangVien.cs" />
+    <Compile Include="Reponsitories\KhoaHocReponsitory.cs" />
+    <Compile Include="Reponsitories\KhoaReponsitory.cs" />
+    <Compile Include="Reponsitories\LopHPReponsitory.cs" />
+    <Compile Include="Reponsitories\MonHocReponsitory.cs" />
+    <Compile Include="Reponsitories\SinhVienReponsitory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reponsitories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\QuanLySinhVien.Model\QuanLySinhVien.Model.csproj">
       <Project>{00b4834d-6ecc-4b2f-bbc2-15969f0cbae7}</Project>
@@ -85,6 +99,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202106111626339_CreateDatabase.resx">
       <DependentUpon>202106111626339_CreateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106120722223_AddValue.resx">
+      <DependentUpon>202106120722223_AddValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106121356241_UpdateObjectDiem.resx">
+      <DependentUpon>202106121356241_UpdateObjectDiem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

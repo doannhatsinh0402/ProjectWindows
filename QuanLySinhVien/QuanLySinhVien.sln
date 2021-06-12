@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLySinhVien.Data", "Quan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLySinhVien.GUI", "QuanLySinhVien.GUI\QuanLySinhVien.GUI.csproj", "{76FA69DB-D278-42C8-A7FA-CC600CFFE681}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLySinhVien.BUS", "BUS\QuanLySinhVien.BUS.csproj", "{24CA3D29-BEAD-4C35-972C-666DC7801867}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{76FA69DB-D278-42C8-A7FA-CC600CFFE681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76FA69DB-D278-42C8-A7FA-CC600CFFE681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76FA69DB-D278-42C8-A7FA-CC600CFFE681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CA3D29-BEAD-4C35-972C-666DC7801867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CA3D29-BEAD-4C35-972C-666DC7801867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CA3D29-BEAD-4C35-972C-666DC7801867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CA3D29-BEAD-4C35-972C-666DC7801867}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

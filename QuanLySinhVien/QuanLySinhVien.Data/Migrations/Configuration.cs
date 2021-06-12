@@ -4,6 +4,7 @@
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using QuanLySinhVien.Model;
 
     internal sealed class Configuration : DbMigrationsConfiguration<QuanLySinhVien.Data.QLSVDbContext>
     {
@@ -14,10 +15,13 @@
 
         protected override void Seed(QuanLySinhVien.Data.QLSVDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+            context.KhoaHocs.AddOrUpdate(
+                new KhoaHoc
+                {
+                    MaKH = "K19_CNTT",
+                    NamBatDau = DateTime.Now,
+                    NamKetThuc = DateTime.Now
+                }) ; 
         }
     }
 }
