@@ -74,6 +74,14 @@
     <Compile Include="Migrations\202106121356241_UpdateObjectDiem.designer.cs">
       <DependentUpon>202106121356241_UpdateObjectDiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106121501326_UpdateTestValue.cs" />
+    <Compile Include="Migrations\202106121501326_UpdateTestValue.designer.cs">
+      <DependentUpon>202106121501326_UpdateTestValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106121505241_UnableRecursive.cs" />
+    <Compile Include="Migrations\202106121505241_UnableRecursive.designer.cs">
+      <DependentUpon>202106121505241_UnableRecursive.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLSVDbContext.cs" />
@@ -105,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106121356241_UpdateObjectDiem.resx">
       <DependentUpon>202106121356241_UpdateObjectDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106121501326_UpdateTestValue.resx">
+      <DependentUpon>202106121501326_UpdateTestValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106121505241_UnableRecursive.resx">
+      <DependentUpon>202106121505241_UnableRecursive.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

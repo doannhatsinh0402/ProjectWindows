@@ -32,10 +32,10 @@ namespace QuanLySinhVien.Data.EntityConfigurations
                 .WithRequired(e => e.MonHoc)
                 .HasForeignKey(e => e.MaMH)
                 .WillCascadeOnDelete(false);
-            HasMany(e => e.MonHocSaus)
+          /*  HasMany(e => e.MonHocSaus)
                 .WithRequired(e => e.MonHocTQ)
                 .HasForeignKey(e => e.MaMHTQ)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(false);*/
         }
     }
 }

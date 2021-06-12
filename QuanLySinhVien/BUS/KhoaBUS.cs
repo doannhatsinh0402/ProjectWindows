@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BUS
+namespace QuanLySinhVien.BUS
 {
     public interface IKhoaBUS
     {
@@ -20,6 +20,17 @@ namespace BUS
     }
     public class KhoaBUS : IKhoaBUS
     {
+        private static KhoaBUS instance;
+
+        public static KhoaBUS Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new KhoaBUS();
+                return instance;
+            }
+        }
         public void Add(string maKhoa, string tenKhoa, string maTruongKhoa)
         {
             var k = new Khoa

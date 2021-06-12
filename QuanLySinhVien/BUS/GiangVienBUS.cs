@@ -7,7 +7,7 @@ using QuanLySinhVien.Data.Infrastucture;
 using QuanLySinhVien.Model;
 using QuanLySinhVien.Model.Common;
 
-namespace BUS
+namespace QuanLySinhVien.BUS
 {
     public interface IGiangVienBUS
     {
@@ -23,6 +23,17 @@ namespace BUS
     }
     public class GiangVienBUS : IGiangVienBUS
     {
+        private static GiangVienBUS instance;
+
+        public static GiangVienBUS Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new GiangVienBUS();
+                return instance;
+            }
+        }
         public void Add(string maGV, string tenGV, GioiTinh gioiTinh, string diaChi, string sdt, string email, string maKhoa)
         {
             var gv = new GiangVien

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BUS
+namespace QuanLySinhVien.BUS
 {
     public interface ILopHPBUS
     {
@@ -20,6 +20,17 @@ namespace BUS
     }
     public class LopHPBUS : ILopHPBUS
     {
+        private static LopHPBUS instance;
+
+        public static LopHPBUS Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new LopHPBUS();
+                return instance;
+            }
+        }
         public void Add(string maLHP, string maMH, string maGV, int namHoc, int hocKy)
         {
             var l = new LopHP

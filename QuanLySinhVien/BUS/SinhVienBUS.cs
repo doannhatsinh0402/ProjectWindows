@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BUS
+namespace QuanLySinhVien.BUS
 {
     public interface ISinhVienBUS
     {
@@ -23,6 +23,17 @@ namespace BUS
     }
     public class SinhVienBUS : ISinhVienBUS
     {
+        private static SinhVienBUS instance;
+
+        public static SinhVienBUS Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new SinhVienBUS();
+                return instance;
+            }
+        }
         public void Add(string maSV, string tenSV, string lop, DateTime ngaySinh, GioiTinh gioiTinh
             , string diaChi, string queQuan, string sdt, string email, string maKhoa, string maKH)
         {

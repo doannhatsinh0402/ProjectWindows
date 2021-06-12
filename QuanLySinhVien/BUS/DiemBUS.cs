@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BUS
+namespace QuanLySinhVien.BUS
 {
     public interface IDiemBUS
     {
@@ -20,6 +20,17 @@ namespace BUS
     }
     public class DiemBUS : IDiemBUS
     {
+        private static DiemBUS instance;
+
+        public static DiemBUS Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new DiemBUS();
+                return instance;
+            }
+        }
         public void Add(string maSV, string maMH, int diemQT, int diemThi, int diemTB)
         {
             var d = new Diem

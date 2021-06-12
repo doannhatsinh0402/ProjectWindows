@@ -21,7 +21,16 @@
                     MaKH = "K19_CNTT",
                     NamBatDau = DateTime.Now,
                     NamKetThuc = DateTime.Now
-                }) ; 
+                }) ;
+            context.MonHocs.AddOrUpdate(
+                new MonHoc
+                {
+                    MaMH = "CSDL35",
+                    TenMH = "Cơ Sở Dữ Liệu",
+                    SoTC = 3,
+                    MaMHTQ = "CTDL15"
+                });
+            
         }
     }
 }

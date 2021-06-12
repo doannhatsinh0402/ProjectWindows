@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BUS
+namespace QuanLySinhVien.BUS
 {
     public interface IMonHocBUS
     {
@@ -20,6 +20,17 @@ namespace BUS
     }
     public class MonHocBUS : IMonHocBUS
     {
+        private static MonHocBUS instance;
+
+        public static MonHocBUS Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new MonHocBUS();
+                return instance;
+            }
+        }
         public void Add(string maMH, string tenMH, int soTC, string maMHTQ)
         {
             var m = new MonHoc

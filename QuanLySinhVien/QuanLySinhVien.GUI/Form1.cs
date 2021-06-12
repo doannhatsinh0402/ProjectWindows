@@ -20,7 +20,7 @@ namespace QuanLySinhVien.GUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            dataGridView1.DataSource = MonHocBUS.Instance.GetAll().ToList();
         }
     }
 }
