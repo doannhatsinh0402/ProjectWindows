@@ -26,13 +26,10 @@ D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Debug\QuanLySinhVi
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Debug\EntityFramework.xml
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.csproj.AssemblyReference.cache
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.CreateDatabase.resources
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.csproj.GenerateResource.cache
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.csproj.CoreCompileInputs.cache
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.csproj.CopyComplete
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.dll
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.pdb
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.AddValue.resources
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.UpdateObjectDiem.resources
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.UpdateTestValue.resources
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.UnableRecursive.resources
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.Create.resources
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.csproj.GenerateResource.cache
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.AddForeignKey.resources

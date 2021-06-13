@@ -3,6 +3,7 @@ using QuanLySinhVien.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,8 +16,7 @@ namespace QuanLySinhVien.BUS
         void Update(string maMH, string tenMH, int soTC, string maMHTQ);
 
         void Delete(string maMH);
-
-        IEnumerable<MonHoc> GetAll();
+        IEnumerable<MonHoc> GetAll(string[] includes = null);
     }
     public class MonHocBUS : IMonHocBUS
     {
@@ -35,6 +35,7 @@ namespace QuanLySinhVien.BUS
         {
             var m = new MonHoc
             {
+                MaMH = maMH,
                 TenMH = tenMH,
                 SoTC = soTC,
                 MaMHTQ = maMHTQ
@@ -42,7 +43,7 @@ namespace QuanLySinhVien.BUS
             UnitOfWork.Instance.MonHocs.Add(m);
             UnitOfWork.Instance.Complete();
         }
-
+        
         public void Delete(string maMH)
         {
             MonHoc m = UnitOfWork.Instance.MonHocs.GetSingleById(maMH);
@@ -50,11 +51,12 @@ namespace QuanLySinhVien.BUS
             UnitOfWork.Instance.Complete();
         }
 
-        public IEnumerable<MonHoc> GetAll()
+        public IEnumerable<MonHoc> GetAll(string[] includes = null)
         {
-            return UnitOfWork.Instance.MonHocs.GetAll();
+            return UnitOfWork.Instance.MonHocs.GetAll(includes);
         }
 
+      
         public void Update(string maMH, string tenMH, int soTC, string maMHTQ)
         {
 

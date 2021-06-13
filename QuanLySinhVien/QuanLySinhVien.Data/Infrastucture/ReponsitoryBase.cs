@@ -58,7 +58,6 @@ namespace QuanLySinhVien.Data.Infrastucture
         }
         public IQueryable<TEntity> GetAll(string[] includes = null)
         {
-            //HANDLE INCLUDES FOR ASSOCIATED OBJECTS IF APPLICABLE
             if (includes != null && includes.Count() > 0)
             {
                 var query = Context.Set<TEntity>().Include(includes.First());

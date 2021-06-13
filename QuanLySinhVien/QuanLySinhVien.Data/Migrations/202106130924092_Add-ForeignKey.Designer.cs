@@ -7,13 +7,13 @@ namespace QuanLySinhVien.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AddValue : IMigrationMetadata
+    public sealed partial class AddForeignKey : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddValue));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddForeignKey));
         
         string IMigrationMetadata.Id
         {
-            get { return "202106120722223_AddValue"; }
+            get { return "202106130924092_Add-ForeignKey"; }
         }
         
         string IMigrationMetadata.Source
