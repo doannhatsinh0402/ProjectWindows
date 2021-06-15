@@ -25,17 +25,15 @@ namespace QuanLySinhVien.Data.EntityConfigurations
             Property(e => e.SoTC)
                 .IsRequired();
 
+
             HasMany(e => e.Diems)
-                .WithRequired(e => e.MonHoc)
-                .WillCascadeOnDelete(false);
+                         .WithRequired(e => e.MonHoc)
+                         .WillCascadeOnDelete(false);
             HasMany(e => e.LopHPs)
                 .WithRequired(e => e.MonHoc)
                 .HasForeignKey(e => e.MaMH)
                 .WillCascadeOnDelete(false);
-            HasMany(e => e.MonHocSaus)
-                .WithOptional(e => e.MonHocTQ)
-                .HasForeignKey(e => e.MaMHTQ)
-                .WillCascadeOnDelete(false);
+
         }
     }
 }

@@ -18,8 +18,10 @@ namespace QuanLySinhVien.BUS
             , string diaChi, string sdt, string email, string maKhoa);
 
         void Delete(string maGV);
+        int CountLopHP(string maGV);
 
-        IEnumerable<GiangVien> GetAll();
+
+        IEnumerable<GiangVien> GetAll(string[] includes = null);
     }
     public class GiangVienBUS : IGiangVienBUS
     {
@@ -38,17 +40,22 @@ namespace QuanLySinhVien.BUS
         {
             var gv = new GiangVien
             { 
+                MaGV = maGV,
                 TenGV = tenGV,
                 GioiTinh = gioiTinh,
                 DiaChi = diaChi,
                 Sdt = sdt,
                 Email = email,
-                MaKhoa = maKhoa
+                MaKhoa = maKhoa,
             };
             UnitOfWork.Instance.GiangViens.Add(gv);
             UnitOfWork.Instance.Complete();
         }
 
+        public int CountLopHP(string maGV)
+        {
+            return UnitOfWork.Instance.LopHPs.Count(e => e.MaGV == maGV);
+        }
         public void Delete(string maGV)
         {
             GiangVien gv = UnitOfWork.Instance.GiangViens.GetSingleById(maGV);
@@ -56,21 +63,28 @@ namespace QuanLySinhVien.BUS
             UnitOfWork.Instance.Complete();
         }
 
-        public IEnumerable<GiangVien> GetAll()
+        public IEnumerable<GiangVien> GetAll(string[] includes = null)
         {
-            return UnitOfWork.Instance.GiangViens.GetAll();
+            return UnitOfWork.Instance.GiangViens.GetAll(includes);
         }
-
-        public void Update(string maGV, string tenGV, GioiTinh gioiTinh, string diaChi, string sdt, string email, string maKhoa)
+        public void Update(string maGV, string tenGV, GioiTinh gioiTinh
+            , string diaChi, string sdt, string email, string maKhoa)
         {
             GiangVien gv = UnitOfWork.Instance.GiangViens.GetSingleById(maGV);
-            gv.TenGV = tenGV;
-            gv.GioiTinh = gioiTinh;
-            gv.DiaChi = diaChi;
-            gv.Sdt = sdt;
-            gv.Email = email;
-            gv.MaKhoa = maKhoa;
-            UnitOfWork.Instance.GiangViens.Update(gv);
+            if (gv == null)
+            {
+                this.Add(maGV, tenGV, gioiTinh, diaChi, sdt, email, maKhoa);
+            }
+            else
+            {
+                gv.TenGV = tenGV;
+                gv.GioiTinh = gioiTinh;
+                gv.DiaChi = diaChi;
+                gv.Sdt = sdt;
+                gv.Email = email;
+                gv.MaKhoa = maKhoa;
+                UnitOfWork.Instance.GiangViens.Update(gv);
+            }
             UnitOfWork.Instance.Complete();
         }
     }

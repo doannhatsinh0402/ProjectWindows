@@ -39,11 +39,9 @@ namespace QuanLySinhVien.Data.EntityConfigurations
                 .IsUnicode(false);
 
             HasMany(e => e.LopHPs)
-                .WithRequired(e => e.GiangVien)
-                .HasForeignKey(e => e.MaGV)
-                .WillCascadeOnDelete(false);
-            HasOptional(e => e.KhoaChuNhiem)
-                .WithRequired(e => e.TruongKhoa);
+                 .WithRequired(e => e.GiangVien)
+                 .HasForeignKey(e => e.MaGV)
+                 .WillCascadeOnDelete(false);
         }
     }
 }

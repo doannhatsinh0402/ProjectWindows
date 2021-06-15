@@ -30,6 +30,6 @@ D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVi
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.csproj.CopyComplete
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.dll
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.pdb
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.Create.resources
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.create.resources
 D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.csproj.GenerateResource.cache
-D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.AddForeignKey.resources
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Debug\QuanLySinhVien.Data.Migrations.LastVersion.resources

@@ -1,0 +1,12 @@
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Release\QuanLySinhVien.Model.dll.config
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Release\QuanLySinhVien.Model.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Release\QuanLySinhVien.Model.pdb
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Release\EntityFramework.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Release\EntityFramework.SqlServer.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Release\EntityFramework.xml
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\bin\Release\EntityFramework.SqlServer.xml
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Release\QuanLySinhVien.Model.csproj.AssemblyReference.cache
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Release\QuanLySinhVien.Model.csproj.CoreCompileInputs.cache
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Release\QuanLySinhVien.Model.csproj.CopyComplete
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Release\QuanLySinhVien.Model.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Model\obj\Release\QuanLySinhVien.Model.pdb

@@ -17,6 +17,7 @@ namespace QuanLySinhVien.BUS
         void Update(string maKH, DateTime namBatDau, DateTime namKetThuc);
 
         void Delete(string maKH);
+        int CountSinhVien(string maKH);
 
         IEnumerable<KhoaHoc> GetAll();
 
@@ -46,6 +47,11 @@ namespace QuanLySinhVien.BUS
             UnitOfWork.Instance.Complete();
         }
 
+        public int CountSinhVien(string maKH)
+        {
+            return UnitOfWork.Instance.SinhViens.Count(e => e.MaKH == maKH);
+        }
+
         public void Delete(string maKH)
         {
             KhoaHoc a = UnitOfWork.Instance.KhoaHocs.GetSingleById(maKH);
@@ -60,9 +66,16 @@ namespace QuanLySinhVien.BUS
         public void Update(string maKH, DateTime namBatDau, DateTime namKetThuc)
         {
             KhoaHoc a = UnitOfWork.Instance.KhoaHocs.GetSingleById(maKH);
-            a.NamBatDau = namBatDau;
-            a.NamKetThuc = namKetThuc;
-            UnitOfWork.Instance.KhoaHocs.Update(a);
+            if (a == null)
+            {
+                this.Add(maKH, namBatDau, namKetThuc);
+            }
+            else
+            {
+                a.NamBatDau = namBatDau;
+                a.NamKetThuc = namKetThuc;
+                UnitOfWork.Instance.KhoaHocs.Update(a);
+            }
             UnitOfWork.Instance.Complete();
         }
     }

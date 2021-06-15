@@ -5,9 +5,9 @@ namespace QuanLySinhVien.Model
     {
         public string MaSV { get; set; }
         public string MaMH { get; set; }
-        public int DiemQT { get; set; }
-        public int DiemThi { get; set; }
-        public int DiemTB { get; set; }
+        public float DiemQT { get; set; }
+        public float DiemThi { get; set; }
+        public float DiemTB { get; set; }
 
         public virtual SinhVien SinhVien { get; set; }
         public virtual MonHoc MonHoc { get; set; }

@@ -62,13 +62,9 @@
     <Compile Include="Infrastucture\IUnitOfWork.cs" />
     <Compile Include="Infrastucture\ReponsitoryBase.cs" />
     <Compile Include="Infrastucture\UnitOfWork.cs" />
-    <Compile Include="Migrations\202106130922435_Create.cs" />
-    <Compile Include="Migrations\202106130922435_Create.designer.cs">
-      <DependentUpon>202106130922435_Create.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202106130924092_Add-ForeignKey.cs" />
-    <Compile Include="Migrations\202106130924092_Add-ForeignKey.designer.cs">
-      <DependentUpon>202106130924092_Add-ForeignKey.cs</DependentUpon>
+    <Compile Include="Migrations\202106150643015_create.cs" />
+    <Compile Include="Migrations\202106150643015_create.designer.cs">
+      <DependentUpon>202106150643015_create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,11 +88,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202106130922435_Create.resx">
-      <DependentUpon>202106130922435_Create.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106130924092_Add-ForeignKey.resx">
-      <DependentUpon>202106130924092_Add-ForeignKey.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106150643015_create.resx">
+      <DependentUpon>202106150643015_create.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

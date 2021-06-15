@@ -1,0 +1,17 @@
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\QuanLySinhVien.Data.dll.config
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\QuanLySinhVien.Data.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\QuanLySinhVien.Data.pdb
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\EntityFramework.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\QuanLySinhVien.Model.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\QuanLySinhVien.Model.pdb
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\QuanLySinhVien.Model.dll.config
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\EntityFramework.xml
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Release\QuanLySinhVien.Data.csproj.AssemblyReference.cache
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Release\QuanLySinhVien.Data.csproj.CoreCompileInputs.cache
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Release\QuanLySinhVien.Data.csproj.CopyComplete
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Release\QuanLySinhVien.Data.dll
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Release\QuanLySinhVien.Data.pdb
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Release\QuanLySinhVien.Data.Migrations.create.resources
+D:\FinalProjectWindows\QuanLySinhVien\QuanLySinhVien.Data\obj\Release\QuanLySinhVien.Data.csproj.GenerateResource.cache

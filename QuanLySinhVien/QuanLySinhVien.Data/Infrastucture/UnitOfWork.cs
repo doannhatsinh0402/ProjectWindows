@@ -53,9 +53,6 @@ namespace QuanLySinhVien.Data.Infrastucture
         public ISinhVienReponsitory SinhViens { get; private set; }
 
 
-        /*   public ICourseRepository Courses { get; private set; }
-public IAuthorRepository Authors { get; private set; }*/
-
         public int Complete()
         {
             return _context.SaveChanges();

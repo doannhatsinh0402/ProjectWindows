@@ -21,6 +21,8 @@ namespace QuanLySinhVien.Data.EntityConfigurations
                 .IsRequired();
             Property(e => e.NamKetThuc)
                 .IsRequired();
+
+
             HasMany(e => e.SinhViens)
                 .WithRequired(e => e.KhoaHoc)
                 .HasForeignKey(e => e.MaKH)

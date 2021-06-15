@@ -11,11 +11,13 @@ namespace QuanLySinhVien.BUS
 {
     public interface IMonHocBUS
     {
-        void Add(string maMH, string tenMH, int soTC, string maMHTQ);
+        void Add(string maMH, string tenMH, int soTC);
 
-        void Update(string maMH, string tenMH, int soTC, string maMHTQ);
+        void Update(string maMH, string tenMH, int soTC);
 
         void Delete(string maMH);
+        int CountDiem(string maMH);
+        int CountLopHP(string maMH);
         IEnumerable<MonHoc> GetAll(string[] includes = null);
     }
     public class MonHocBUS : IMonHocBUS
@@ -31,19 +33,28 @@ namespace QuanLySinhVien.BUS
                 return instance;
             }
         }
-        public void Add(string maMH, string tenMH, int soTC, string maMHTQ)
+        public void Add(string maMH, string tenMH, int soTC)
         {
             var m = new MonHoc
             {
                 MaMH = maMH,
                 TenMH = tenMH,
                 SoTC = soTC,
-                MaMHTQ = maMHTQ
             };
             UnitOfWork.Instance.MonHocs.Add(m);
             UnitOfWork.Instance.Complete();
         }
-        
+
+        public int CountDiem(string maMH)
+        {
+            return UnitOfWork.Instance.Diems.Count(e => e.MaMH == maMH);
+        }
+
+        public int CountLopHP(string maMH)
+        {
+            return UnitOfWork.Instance.LopHPs.Count(e => e.MaMH == maMH);
+        }
+
         public void Delete(string maMH)
         {
             MonHoc m = UnitOfWork.Instance.MonHocs.GetSingleById(maMH);
@@ -57,14 +68,19 @@ namespace QuanLySinhVien.BUS
         }
 
       
-        public void Update(string maMH, string tenMH, int soTC, string maMHTQ)
+        public void Update(string maMH, string tenMH, int soTC)
         {
-
             MonHoc m = UnitOfWork.Instance.MonHocs.GetSingleById(maMH);
-            m.TenMH = tenMH;
-            m.SoTC = soTC;
-            m.MaMHTQ = maMHTQ;
-            UnitOfWork.Instance.MonHocs.Update(m);
+            if (m == null)
+            {
+                this.Add(maMH, tenMH, soTC);
+            }
+            else
+            {
+                m.TenMH = tenMH;
+                m.SoTC = soTC;
+                UnitOfWork.Instance.MonHocs.Update(m);
+            }
             UnitOfWork.Instance.Complete();
         }
     }

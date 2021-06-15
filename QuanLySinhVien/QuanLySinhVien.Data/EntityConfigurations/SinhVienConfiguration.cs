@@ -50,8 +50,8 @@ namespace QuanLySinhVien.Data.EntityConfigurations
                 .IsUnicode(false);
 
             HasMany(e => e.Diems)
-                .WithRequired(e => e.SinhVien)
-                .WillCascadeOnDelete(false);
+                 .WithRequired(e => e.SinhVien)
+                 .WillCascadeOnDelete(false);
         }
     }
 }

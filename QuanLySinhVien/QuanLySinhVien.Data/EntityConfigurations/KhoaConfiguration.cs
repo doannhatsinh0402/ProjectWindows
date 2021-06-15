@@ -22,10 +22,6 @@ namespace QuanLySinhVien.Data.EntityConfigurations
                 .IsRequired()
                 .HasMaxLength(30)
                 .IsUnicode(true);
-            Property(e => e.MaTruongKhoa)
-                .HasMaxLength(15)
-                .IsRequired()
-                .IsUnicode(false);
 
             HasMany(e => e.GiangViens)
                 .WithRequired(e => e.Khoa)

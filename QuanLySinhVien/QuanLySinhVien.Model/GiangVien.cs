@@ -20,8 +20,6 @@ namespace QuanLySinhVien.Model
 
         public virtual ICollection<LopHP> LopHPs { get; set; }
 
-        public virtual Khoa KhoaChuNhiem { get; set; }
-
         public virtual Khoa Khoa { get; set; }
     }
 }

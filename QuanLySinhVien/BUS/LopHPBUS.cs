@@ -18,7 +18,7 @@ namespace QuanLySinhVien.BUS
 
         IEnumerable<LopHP> GetAll();
     }
-    public class LopHPBUS : ILopHPBUS
+    public class LopHPBUS :ILopHPBUS
     {
         private static LopHPBUS instance;
 
@@ -35,6 +35,7 @@ namespace QuanLySinhVien.BUS
         {
             var l = new LopHP
             {
+                MaLHP = maLHP,
                 MaMH = maMH,
                 MaGV = maGV,
                 NamHoc = namHoc,
@@ -59,11 +60,18 @@ namespace QuanLySinhVien.BUS
         public void Update(string maLHP, string maMH, string maGV, int namHoc, int hocKy)
         {
             LopHP l = UnitOfWork.Instance.LopHPs.GetSingleById(maLHP);
-            l.MaMH = maMH;
-            l.MaGV = maGV;
-            l.NamHoc = namHoc;
-            l.HocKy = hocKy;
-            UnitOfWork.Instance.LopHPs.Update(l);
+            if (l == null)
+            {
+                this.Add(maLHP, maMH, maGV, namHoc, hocKy);
+            }
+            else
+            {
+                l.MaMH = maMH;
+                l.MaGV = maGV;
+                l.NamHoc = namHoc;
+                l.HocKy = hocKy;
+                UnitOfWork.Instance.LopHPs.Update(l);
+            }
             UnitOfWork.Instance.Complete();
         }
     }
